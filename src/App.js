@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import { Container } from '@mui/material';
+import './style.css';
+import LanguageSelector from './components/LanguageSelector';
+import PersonalInfoComponent from './components/PersonalInfoComponent';
+
+const generateRandomData = (numCategories) => {
+  const data = [];
+
+  for (let i = 1; i <= numCategories; i++) {
+    data.push({
+      label: `Categoría ${i}`,
+      value: Math.floor(Math.random() * 100) + 1, // Valores aleatorios entre 1 y 100
+    });
+  }
+
+  return data;
+};
 
 function App() {
+  const data = generateRandomData(5);
+  const personalData = {
+    name: 'John Doe',
+    age: 25,
+    email: 'john.doe@example.com'
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fixed>
+     { /*<LanguageSelector />*/}
+      {/*<PersonalInfoComponent data={personalData} />*/}
+      
+    </Container>
   );
 }
 

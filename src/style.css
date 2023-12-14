@@ -1,0 +1,50 @@
+.select-pagination {
+  display: flex;
+  width: 106px;
+  align-items: center;
+  color: #000000;
+  background-color: #FFFfff;
+  height: 35px;
+}
+
+/* DonutChart.css */
+
+/* Estilos para el contenedor principal del gráfico */
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Estilos para el contenedor de leyendas */
+.legend-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+/* Estilos para los íconos cuadrados */
+.legend-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/* Estilos para el texto de la leyenda */
+.legend-text {
+  font-size: 14px;
+}
+.row-table{
+margin: 10px !important;
+}
+.row {
+  transition: all 0.3s ease; /* Agrega una transición suave para animar los cambios */
+}
+.row:hover {
+  background-color: #f0f0f0; /* Cambia el color de fondo al pasar el mouse sobre la fila */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre la fila */
+  transform: scale(1.02); /* Aumenta el tamaño de la fila al pasar el mouse sobre ella */
+  z-index: 1; /* Trae la fila al frente */
+}

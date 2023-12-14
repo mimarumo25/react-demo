@@ -1,0 +1,8 @@
+{
+  "personalInfo": {
+    "title": "Personal Information",
+    "name": "Name",
+    "age": "Age",
+    "email": "Email"
+  }
+}
